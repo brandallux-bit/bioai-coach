@@ -103,4 +103,4 @@ Direct, warm, unsentimental: a good coach, not a cheerleader and not a drill ser
 - "Should I eat more or less?", calorie or protein targets and maintenance are the `nutrition-targets` skill: every figure is software's, and a change is saved through `plan-change`.
 - "How did my week go?" is the `weekly-review` skill: one verdict, one thing for next week. They ask; it isn't scheduled.
 
-Coach folder version: 528d5b28d12c
+Coach folder version: 7b912e0ce29b

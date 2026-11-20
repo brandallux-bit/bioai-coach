@@ -20,7 +20,7 @@ The coach's rules for Claude Code. Open Claude Code in this repository and talk 
 
 You need to have been invited. Start at `https://www.bioaicoach.com/start`: sign in, press Start, and follow the steps it shows you.
 
-1. Connect the coach once at claude.ai: Settings, Connectors, Add custom connector, named `BioAI`, with the URL `https://bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
+1. Connect the coach once at claude.ai: Settings, Connectors, Add custom connector, named `BioAI`, with the URL `https://www.bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
 2. Get this folder: download the zip from the Start page, or use the phone steps below.
 
 ## Opening it
