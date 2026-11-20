@@ -12,7 +12,7 @@ The coach's rules for Claude Code. Open Claude Code in this repository and talk 
 - `.claude/skills/nutrition-targets/`: should you eat more or less: maintenance from what you ate and what your weight did, your floor, and the calories and protein a rate comes to.
 - `.claude/skills/intake/`: setting up a new person: what you want, how you live, what is safe for you, and your first plan, saved as you say it and adopted only on your yes.
 - `.claude/skills/plan-change/`: changing a day or the plan: draft, stage, review, show, and save only on your yes.
-- `.claude/agents/`: five read-only reviewers the coach runs on a plan change: `nutrition`, `strength`, `recovery`, `adherence` and `red-team`. They read your chart and save nothing.
+- `.claude/agents/`: read-only reviewers the coach runs on a plan change: the five standing ones, `nutrition`, `strength`, `recovery`, `adherence` and `red-team`, and one `specialist` that takes on any brief saved in your chart. They read your chart and save nothing.
 - `.claude/settings.json`: the platform's tools pre-allowed, file and shell tools denied, and the start-of-session hook.
 - `.claude/hooks/session-key.mjs`: prints a fresh key prefix at the start of each session, so a resent save is never saved twice.
 
