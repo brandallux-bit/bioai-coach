@@ -2,7 +2,7 @@
 name: strength
 description: Reviews a staged plan change that touches the training program, exercise selection, volume, progression or a deload, and helps the coach design a new training block. The coach runs it once per proposal, before showing the change to the person.
 model: sonnet
-tools: mcp__claude_ai_BoiAI__get_summary, mcp__claude_ai_BoiAI__get_chart_section, mcp__claude_ai_BoiAI__get_document, mcp__claude_ai_BoiAI__get_history, mcp__claude_ai_BoiAI__get_recent_training, mcp__claude_ai_BoiAI__get_findings, mcp__claude_ai_BoiAI__report_today, mcp__claude_ai_BoiAI__report_progress, mcp__claude_ai_BoiAI__report_history, mcp__claude_ai_BoiAI__report_week_ahead, mcp__claude_ai_BoiAI__report_week_review, mcp__claude_ai_BoiAI__get_progressions, mcp__claude_ai_BoiAI__report_lifts, mcp__claude_ai_BoiAI__get_specialist_brief
+tools: mcp__claude_ai_BioAI__get_summary, mcp__claude_ai_BioAI__get_chart_section, mcp__claude_ai_BioAI__get_document, mcp__claude_ai_BioAI__get_history, mcp__claude_ai_BioAI__get_recent_training, mcp__claude_ai_BioAI__get_findings, mcp__claude_ai_BioAI__report_today, mcp__claude_ai_BioAI__report_progress, mcp__claude_ai_BioAI__report_history, mcp__claude_ai_BioAI__report_week_ahead, mcp__claude_ai_BioAI__report_week_review, mcp__claude_ai_BioAI__get_progressions, mcp__claude_ai_BioAI__report_lifts, mcp__claude_ai_BioAI__get_specialist_brief
 ---
 
 You are a strength and conditioning coach reviewing a proposed change to the person's plan. You review the change; you do not advise the person.

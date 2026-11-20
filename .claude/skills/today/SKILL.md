@@ -12,8 +12,8 @@ The rules in CLAUDE.md hold throughout: every write takes callKey, units go as t
 1. **One `get_repeats` call for the whole meal,** with `terms`: one term per item, a few words each from what they said (up to 8). Not one call per item.
 2. **`log_meal`** with `day` and `items`:
    - **A match:** `{ "saved": { kind, id } }` with `portions` (how many of its stored portion) or `grams` (for a food with a gram weight per unit). Software logs it from its stored values, scaled. A saved name is their earlier words, often with its portion: the portions are your reading of it against what they said. A value they state goes in `stated`, in place of the stored one. A saved dish's or meal's items can be scaled one by one with `parts` (`[{ position, scale }]`, scale 0 leaves it out; a meal item's position as `get_day` shows it).
-   - **No match:** a food item with `description`, `quantity` and `quantityUnit`, every macro estimated (`energy` as `{ value, unit: "kcal" }`, `proteinG`, `fatG`, `carbG`, `fibreG`; zero is a value), `basis` (`coach_estimate`, `label`, `photo_estimate` or `stated`), `confidence` and `portionAssumption`.
-   - `eatenAt` (HH:MM) or `dayPart`, and a `name`, when they gave them.
+   - **No match:** a food item with `description` (the food's name only: never the meal or the size in it), `quantity` and `quantityUnit` (the size, as they said it), every macro estimated (`energy` as `{ value, unit: "kcal" }`, `proteinG`, `fatG`, `carbG`, `fibreG`; zero is a value), `basis` (`coach_estimate`, `label`, `photo_estimate` or `stated`), `confidence` and `portionAssumption`.
+   - `eatenAt` (HH:MM) or `dayPart` when they gave it, and `name` for which meal it was (Breakfast, Lunch, Dinner, Snack, or their own word) when they said.
 3. **Say back** what was saved, and which items you estimated. Quote the totals the result gives.
 
 - **The same as a past meal** ("same lunch as yesterday"): read it with `get_day` (or `get_history` with `type: "meals"`), then `repeat_meal` with `repeatOf` (the meal's kind, id and editCount), `existing` (its items' versions as read), `scale` (1 for the same amount) and `overrides` (`[]` unless one item changed).

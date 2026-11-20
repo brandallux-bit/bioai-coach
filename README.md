@@ -1,6 +1,6 @@
-# boiai-coach
+# bioai-coach
 
-The coach's rules for Claude Code. Open Claude Code in this repository and talk to your coach: it logs and answers through the BoiAI platform's tools, signed in as you.
+The coach's rules for Claude Code. Open Claude Code in this repository and talk to your coach: it logs and answers through the BioAI platform's tools, signed in as you.
 
 **It holds no data and no platform code.** Your chart lives on the platform (bioaicoach.com). This repository holds only:
 
@@ -20,13 +20,13 @@ The coach's rules for Claude Code. Open Claude Code in this repository and talk 
 
 You need to have been invited. Start at `https://www.bioaicoach.com/start`: sign in, press Start, and follow the steps it shows you.
 
-1. Connect the coach once at claude.ai: Settings, Connectors, Add custom connector, named `BoiAI`, with the URL `https://bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
+1. Connect the coach once at claude.ai: Settings, Connectors, Add custom connector, named `BioAI`, with the URL `https://bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
 2. Get this folder: download the zip from the Start page, or use the phone steps below.
 
 ## Opening it
 
 - **Desktop:** open Claude Code in the folder you downloaded.
-- **Phone:** sign in with GitHub at claude.ai/code and start a session on `brandallux-bit/boiai-coach`. If the session can't reach the platform, add `bioaicoach.com` to that environment's allowed domains.
+- **Phone:** sign in with GitHub at claude.ai/code and start a session on `brandallux-bit/bioai-coach`. If the session can't reach the platform, add `bioaicoach.com` to that environment's allowed domains.
 
 Then say hello. Its first step is always to read your chart summary. After that, tell it a meal, a weight, a workout, or ask "what's left today?".
 
