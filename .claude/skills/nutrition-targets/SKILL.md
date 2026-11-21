@@ -5,7 +5,7 @@ description: Calorie, protein and macro targets. Use when the person asks "shoul
 
 # Nutrition targets: the figures, agreed with them, saved through plan-change
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: what should they eat, given what they've actually eaten and what their weight actually did. A target is saved only through the `plan-change` skill.
+The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: what should they eat, given what they've actually eaten and what their weight actually did. A single day's calories they ask for is `set_day_target`, written at once; any longer target is saved through the `plan-change` skill.
 
 ## The coach does no arithmetic
 

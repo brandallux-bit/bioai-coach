@@ -10,7 +10,8 @@ The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of s
 ## A day is not a plan change
 
 - **One day** ("move today's session to tomorrow", "rest Friday", "swap Friday's run for a walk"): `change_planned_day` with `action` (`set`, `rest` or `move`), the `day` (`{ "relative": "today" | "tomorrow" }`, `{ "daysAhead": 0 to 6 }`, or `{ "date": "YYYY-MM-DD" }` when they name it), `to` for a move, and `session` where one is set. Give the five parts in your words: `summary`, `evidence`, `expectedEffect`, `reversal`, `alternativesRejected`.
-- It is written at once, with no review and no subagent. Say back what changed from the result, as software gave it. A refusal says why; say that.
+- **One day's calories** ("make today a normal day", "Saturday at 2,300"): `set_day_target` with the `day`, `energy` as they said it with its unit, any protein, fat or fibre they gave, and `why`, one sentence. `clear: true` puts the day back on the schedule. Refused as `floor_refused` below their resting floor, `floor_unavailable` when the floor can't be worked out, or `birth_date_required`: say why, as in step 2.
+- Both are written at once, with no review and no subagent. Say back what changed from the result, as software gave it. A refusal says why; say that.
 - Anything more than one day is below.
 - **Reviews cost a share of their plan's limits.** An ordinary save or a day change runs no subagent. Don't run one for anything that isn't a plan change.
 
@@ -34,6 +35,7 @@ Draft the change with its reasons:
 - **Alternatives you rejected.**
 - **The strongest counterargument.**
 - **Confidence** (`high`, `medium` or `low`) **and the failure mode:** the specific week it falls apart.
+- **For a change they directed,** leave these last three out. A first plan, or a draft with any piece of yours, still states them.
 - **Whose it is (`stance`).** `coach_recommends` when it's your idea or your reading of their goals. `user_choice` only when they directed it, in their words. Never mark your own idea as their choice to skip the review: a choice they make stands only where the change marks it.
 
 Change one variable at a time. A plan that gets simpler when adherence drops, never more elaborate.
@@ -77,7 +79,8 @@ For a change you recommend, run each subagent the result's `reviewers` names, **
 
 Show them, before they decide:
 - **The change text,** as software wrote it (`lines`), from what to what. Quote it; compute nothing.
-- **The strongest counterargument,** your **confidence** and its **failure mode**.
+- **For a change you recommend:** the strongest counterargument, your **confidence** and its **failure mode**.
+- **For a change they directed:** none of those; it has none. Say back what they are doing as they mean it. Raise a concern only if you have a real one, once, in a sentence.
 - **Any floor note** from the result.
 - **A reviewer's concern that stands,** and your answer to it.
 
