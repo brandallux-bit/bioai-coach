@@ -35,6 +35,7 @@ The rules in CLAUDE.md hold throughout: every write takes callKey, units go as t
    - **Completed,** on a day with workouts planned: `plannedWorkout` is the one it was, as `get_summary` or `get_day` shows it (a written session `{ id, editCount }`, or a scheduled slot `{ slotId, editCount }`), or `null` if it was none of them.
    - **Rest or skip,** on a day with workouts planned: `replaces` lists the ones it takes off (`[]` if none). "I'm resting today" names every one planned that day; a skip is one workout, so save one skip per workout. Say which came off. Moving a workout to another day is `change_planned_day` (see the `plan-change` skill), not a save of this session.
    - Light, moderate and hard minutes, when they matter: complete them from their words as your guess, and say it back.
+   - **A device's figures for the workout** (a watch's screenshot, a machine's readout) are measured: its duration as given, and its **active** calories as `energyOverride` (`{ value, unit: "kcal" }`) with `kcalOverrideReason` naming the source ("Apple Watch screenshot"), in place of the estimate. Active, not total: resting burn is counted separately. Average heart rate goes in `note`. Don't ask whether to use them.
 3. **More sets for a session already saved:** `get_day` for the session's `{ id, editCount }` and every set's, then `log_sets` with `session`, `existingSets` (the complete list as read) and the new `sets`.
 
 ## A correction, or an entry to remove
