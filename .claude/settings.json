@@ -45,6 +45,7 @@
       "mcp__claude_ai_BioAI__set_follow_up",
       "mcp__claude_ai_BioAI__answer_intake_item",
       "mcp__claude_ai_BioAI__set_specialist_brief",
+      "mcp__claude_ai_BioAI__place_watch_workout",
       "mcp__claude_ai_BioAI__change_planned_day",
       "mcp__claude_ai_BioAI__set_day_target",
       "mcp__claude_ai_BioAI__propose_plan_change",
