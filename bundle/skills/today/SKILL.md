@@ -28,6 +28,11 @@ The coach's rules hold throughout: every write takes callKey, units go as they w
 
 **`log_metric`** with `measurement` (the key the summary shows for it), `day`, `value` (`{ value, unit }` as said, such as `{ value: 7.5, unit: "h" }`; a step count bare), `basis` (`stated` for what they said, `measured` for a device's reading or screenshot) and `components: []`. If it refuses because they have no selection of that measurement, log it with `log_body`, which adds one.
 
+**Apple Health's four daily figures** are steps, sleep duration, resting heart rate and HRV. Some people have connected the BioAI iPhone app, which sends them by itself; most have not. Go by what the record shows, never by what you assume:
+- **A day's reading shows `source: "device"`** (`get_day`, `get_history` with `type: "readings"`; the same reading is "a reading from Apple Health" where the words are given). It arrived by itself and is the figure the platform uses. Don't ask them to type or screenshot that figure for that day, and don't log a typed one over it. A typed figure for the same day is kept, but it isn't the one used.
+- **They say Apple Health's figure is wrong:** it is corrected in the Health app on their phone, and reaches the record at the next sync (opening the BioAI app syncs at once). Don't correct a device reading yourself.
+- **Otherwise,** a day with no such reading, a person who hasn't connected the app, and every figure Apple Health doesn't send (a workout's duration and active calories, weight, and so on): typed figures and screenshots are logged as above. Never say a figure arrived by itself unless the record shows it.
+
 ## A session
 
 1. **Exercise ids,** when the session has sets: `get_chart_section` with `section: "plan"`; its `in_force` list is the program line by line, then each exercise with the id `log_session` takes. A set of an exercise the plan prescribes goes under the plan's own exercise, never a catalogue exercise of a like name. One outside the plan: `section: "exercises"`.
