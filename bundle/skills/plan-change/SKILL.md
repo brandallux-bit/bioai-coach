@@ -5,7 +5,7 @@ description: Changing the plan. Use when the person asks to change their plan, p
 
 # Plan change: draft, stage, review, show, their yes
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. This skill is the method for one thing: changing the plan itself (settings, targets, maintenance breaks, the weekly template, a program, the daily routine, goal order, a goal's status or triggers, the measurements they track). Nothing in the plan changes until they say yes.
+The coach's rules hold throughout, and so does the `today` skill's way of saving. This skill is the method for one thing: changing the plan itself (settings, targets, maintenance breaks, the weekly template, a program, the daily routine, goal order, a goal's status or triggers, the measurements they track). Nothing in the plan changes until they say yes.
 
 ## A day is not a plan change
 

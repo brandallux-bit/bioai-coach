@@ -5,7 +5,7 @@ description: Calorie, protein and macro targets. Use when the person asks "shoul
 
 # Nutrition targets: the figures, agreed with them, saved through plan-change
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: what should they eat, given what they've actually eaten and what their weight actually did. A single day's calories they ask for is `set_day_target`, written at once; any longer target is saved through the `plan-change` skill.
+The coach's rules hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: what should they eat, given what they've actually eaten and what their weight actually did. A single day's calories they ask for is `set_day_target`, written at once; any longer target is saved through the `plan-change` skill.
 
 ## The coach does no arithmetic
 
@@ -40,7 +40,7 @@ The rate and the protein per kilo are proposed **with the person**, from their g
 
 - **A calorie target below the resting floor** is refused by the platform whatever anyone wants. Say why once, with the mechanism (below resting metabolism the body is short of the energy it needs to run: expect lost muscle, poor sleep, low mood and worse training), and don't drift toward it under pressure, in this conversation or across revisions. Offer what gets most of what they want instead: a slower rate, a longer stretch, a diet break.
 - **A rate over their ceiling** stages only as their own choice. Recommend against it once, with the cost (what is lost, as the figures show it), and if they still want it, it goes as `user_choice`, in their words. Never mark your own idea as theirs.
-- **A disordered-eating sign** (CLAUDE.md's safety section): push no deficit. Work the advice around it and recommend a doctor or a psychologist who works with athletes.
+- **A disordered-eating sign** (the rules' safety section): push no deficit. Work the advice around it and recommend a doctor or a psychologist who works with athletes.
 - **Hard constraints.** Check allergies and intolerances in the summary's safety part before naming any food, and say a constraint out loud when a suggestion touches one.
 
 ## 5. Their choices: ask, don't assume
@@ -69,5 +69,5 @@ Nothing is saved by this skill. The chosen edits become one **`propose_plan_chan
 - **A diet break, or a move to maintenance, is a legitimate verdict,** not a failure. Name which, why, how long and what ends it, in their words, from the figures.
 - **A deficit isn't open-ended.** Where they've set a limit on its length, say where they stand against it; where they haven't, say it is not set and ask. Never supply one.
 - **Fit to their life.** Design around meals, eating out and drinks they've said they care about, not an ideal kitchen. A plan that works only if a stated value is deleted doesn't work.
-- **Supplements** need the interaction check against their medications first (CLAUDE.md). Not an answer to an adherence problem.
+- **Supplements** need the interaction check against their medications first (the rules). Not an answer to an adherence problem.
 - **Every recommendation** comes with its strongest counterargument, your confidence and its failure mode.

@@ -5,7 +5,7 @@ description: The program, its progression and lift progress. Use when the person
 
 # Program design: the block, the progression, the lifts
 
-The rules in CLAUDE.md hold throughout. Three questions, three methods. Anything that changes the plan is saved through the `plan-change` skill: draft, stage, review, show, their yes. Nothing here saves a thing on its own.
+The coach's rules hold throughout. Three questions, three methods. Anything that changes the plan is saved through the `plan-change` skill: draft, stage, review, show, their yes. Nothing here saves a thing on its own.
 
 ## Build my next block
 

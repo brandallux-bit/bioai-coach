@@ -52,7 +52,12 @@
       "mcp__claude_ai_BioAI__adopt_plan_change",
       "mcp__claude_ai_BioAI__withdraw_plan_change"
     ],
-    "deny": ["Bash", "Write", "Edit", "NotebookEdit"]
+    "deny": [
+      "Bash",
+      "Write",
+      "Edit",
+      "NotebookEdit"
+    ]
   },
   "hooks": {
     "SessionStart": [
@@ -62,6 +67,15 @@
           {
             "type": "command",
             "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-key.mjs\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PROJECT_DIR:-.}/.bioai/update.sh\"",
+            "timeout": 60
           }
         ]
       }

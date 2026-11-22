@@ -5,7 +5,7 @@ description: Setting up a new person's chart and writing their first plan. Use w
 
 # Intake: find out what they want, save it as they say it, then one first plan
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. You are finding out what this person wants. You are not fitting them to a model. Everything is saved through the tools the moment it is said: nothing is a file, and what is saved is where intake stands.
+The coach's rules hold throughout, and so does the `today` skill's way of saving. You are finding out what this person wants. You are not fitting them to a model. Everything is saved through the tools the moment it is said: nothing is a file, and what is saved is where intake stands.
 
 ## The rule that governs the rest
 

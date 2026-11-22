@@ -5,7 +5,7 @@ description: Everyday logging and day questions. Use whenever the person reports
 
 # Today: logging and day questions
 
-The rules in CLAUDE.md hold throughout: every write takes callKey, units go as they were said, a day goes as `{ "date": "YYYY-MM-DD" }` when they name it or `{ "relative": "today" | "yesterday" }`, and you say back what the result shows was saved. Ids and versions (`{ id, editCount }`) always come from a read; never make one up.
+The coach's rules hold throughout: every write takes callKey, units go as they were said, a day goes as `{ "date": "YYYY-MM-DD" }` when they name it or `{ "relative": "today" | "yesterday" }`, and you say back what the result shows was saved. Ids and versions (`{ id, editCount }`) always come from a read; never make one up.
 
 ## A meal or drink
 
@@ -62,7 +62,7 @@ The rules in CLAUDE.md hold throughout: every write takes callKey, units go as t
 
 ## Saving the rest of what they tell you
 
-Save each fact **at once, in their words, and say back what was saved** (the rules in CLAUDE.md). Which verb:
+Save each fact **at once, in their words, and say back what was saved** (the coach's rules). Which verb:
 
 - **A trip, a social event or a race:** `capture_event` with its dates.
 - **A practical constraint** (when they can train, where and with what, how they eat, a preference): `capture_constraint`, their words as the record; add only what they gave as a measured fact. To fix one: `correct_capture`.

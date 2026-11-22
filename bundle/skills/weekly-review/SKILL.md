@@ -5,7 +5,7 @@ description: The review of the finished week. Use when the person asks "how did 
 
 # Weekly review: the facts, one verdict, one thing
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: how did the last finished week go, and what follows from it.
+The coach's rules hold throughout, and so does the `today` skill's way of saving. This skill is the method for one question: how did the last finished week go, and what follows from it.
 
 **It is not scheduled: they ask.** Never start a review unprompted, never nag for one, never end an ordinary message with an offer of one. If they ask mid-week, the week reviewed is still the last finished one (Monday to Sunday); the week in progress is never reviewed, and no input names a week. If they want today or this week so far, that is `report_today` or `report_progress`, not this.
 
@@ -59,7 +59,7 @@ Give exactly one, and say what it was built on (which facts, which days):
 - **A deload or a diet break.** Name which, why, how long, and what ends it.
 - **See a doctor.** Something here needs one: say what, and why it isn't a coaching question.
 
-**Safety changes the verdict.** A red-flag symptom or a disordered-eating sign in the week (CLAUDE.md's safety section) comes before the numbers. Push no deficit, work the advice around it, recommend a doctor, and don't dress it up as a hold. Their health findings come first.
+**Safety changes the verdict.** A red-flag symptom or a disordered-eating sign in the week (the rules' safety section) comes before the numbers. Push no deficit, work the advice around it, recommend a doctor, and don't dress it up as a hold. Their health findings come first.
 
 A recommendation to change comes with its strongest counterargument, your confidence (high, moderate or speculative) and its failure mode, and names the domain it serves, in their words. Don't soften real news: if completion was 40%, say 40%. If they're right, say so in one sentence and move on.
 

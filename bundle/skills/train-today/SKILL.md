@@ -5,7 +5,7 @@ description: What to train today. Use when the person asks what they should trai
 
 # Train today: keep, adapt or replace
 
-The rules in CLAUDE.md hold throughout, and so does the `today` skill's way of logging. This skill is the method for one question: what should they train today, given what they actually did lately.
+The coach's rules hold throughout, and so does the `today` skill's way of logging. This skill is the method for one question: what should they train today, given what they actually did lately.
 
 ## The evidence
 
@@ -39,4 +39,4 @@ Give exactly one, and say what it was built against (which days, which overlap, 
 
 - **An adapted or replaced session is written, not just advised:** `change_planned_day` (the `plan-change` skill says how), so Today on the dashboard shows it. Say it back from the result. "Move today's session to tomorrow" and "swap Friday's run for a walk" go the same way. A day change runs no review. Keep, with nothing to write, is advice in words.
 - **When they've trained, log what they did** with `log_session` (and `replaces` or `plannedWorkout`, as the `today` skill says), so the chart holds what happened, not what was advised.
-- **Name the domain the session serves** when it isn't obvious (CLAUDE.md): which of their goals, in their words.
+- **Name the domain the session serves** when it isn't obvious (the rules): which of their goals, in their words.
