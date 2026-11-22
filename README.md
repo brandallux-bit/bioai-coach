@@ -1,6 +1,6 @@
 # bioai-coach
 
-The coach's rules for Claude Code. Open Claude Code in this folder and talk to your coach: it logs and answers through the BioAI platform's tools, signed in as you.
+The coach's rules for Claude Code. Start a Claude Code session on your own copy of this repository and talk to your coach: it logs and answers through the BioAI platform's tools, signed in as you.
 
 **It keeps itself up to date.** Each time a session starts, a small script fetches the coach's current rules, skills and reviewers from this repository. You never update it yourself.
 
@@ -33,12 +33,12 @@ What the script writes at the start of a session, never committed:
 You need to have been invited. Start at `https://www.bioaicoach.com/start`: sign in, press Start, and follow the steps it shows you.
 
 1. Connect the coach once: in a web browser go to claude.ai/plugins, press Add, then Add custom connector, named `BioAI`, with the URL `https://www.bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
-2. Get this folder, once: on a computer, the zip on the Start page; on a phone, the steps below.
+2. Connect GitHub once (needs a free GitHub account): in a web browser, go to claude.ai/code and connect GitHub when it asks.
+3. Make your own copy, once: on GitHub, fork `brandallux-bit/bioai-coach` once (Claude lists only your own repositories). Your copy keeps itself up to date: you never go back to GitHub for it.
 
 ## Opening it
 
-- **Computer:** open Claude Code in the folder you unzipped.
-- **Phone** (needs a free GitHub account): in a web browser, connect GitHub at claude.ai/code. On GitHub, fork `brandallux-bit/bioai-coach` once to make your own copy (Claude lists only your own repositories), then start a session on your copy, at claude.ai/code or in the Claude app's Code tab. Your copy keeps itself up to date: you never go back to GitHub for it. If the session can't reach the platform, add `bioaicoach.com` to that environment's allowed domains.
+The coach always runs in a cloud session on your copy, on a computer or a phone. At claude.ai/code, or in the Claude app's Code tab, start a session on your copy. Nothing is put on your machine and there is nothing to install. If the session can't reach the platform, add `bioaicoach.com` to that environment's allowed domains.
 
 Then say hello. Its first step is always to read your chart summary. After that, tell it a meal, a weight, a workout, or ask "what's left today?".
 
