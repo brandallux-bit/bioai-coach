@@ -32,7 +32,7 @@ What the script writes at the start of a session, never committed:
 
 You need to have been invited. Start at `https://www.bioaicoach.com/start`: sign in, press Start, and follow the steps it shows you.
 
-1. Connect the coach once at claude.ai: Settings, Connectors, Add custom connector, named `BioAI`, with the URL `https://www.bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
+1. Connect the coach once: in a web browser go to claude.ai/plugins, press Add, then Add custom connector, named `BioAI`, with the URL `https://www.bioaicoach.com/api/mcp`. Sign in by the emailed link if asked, and press Allow.
 2. Get this folder, once: on a computer, the zip on the Start page; on a phone, the steps below.
 
 ## Opening it
