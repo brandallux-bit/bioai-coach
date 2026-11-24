@@ -1,6 +1,6 @@
 ---
 name: today
-description: Everyday logging and day questions. Use whenever the person reports or asks to log a meal, drink or snack, a weight or other reading, steps, sleep, a workout or its sets, a new allergy, medication, injury or condition, a correction or an entry to remove, or sends a screenshot or photo of any of these; and whenever they tell you something to keep: a trip or event, a constraint on when or where they train, a profile fact, their values or an injury's story, a precommitment, a standing instruction, how they want you to talk to them, a goal, a trigger or what they track, or a follow-up; and when they ask what's left today, how a measure is trending, what they did recently, or what the findings say.
+description: Everyday logging and day questions. Use whenever the person reports or asks to log a meal, drink or snack, a weight or other reading, steps, sleep, a workout or its sets, a lab report (a PDF, a photo or pasted results), a new allergy, medication, injury or condition, a correction or an entry to remove, or sends a screenshot or photo of any of these; and whenever they tell you something to keep: a trip or event, a constraint on when or where they train, a profile fact, their values or an injury's story, a precommitment, a standing instruction, how they want you to talk to them, a goal, a trigger or what they track, or a follow-up; and when they ask what's left today, how a measure is trending, what they did recently, or what the findings say.
 ---
 
 # Today: logging and day questions
@@ -50,6 +50,19 @@ The coach's rules hold throughout: every write takes callKey, units go as they w
    - **On foot** (`onFoot: true`: a walk, a run, a hike, golf): tying brings its time only. Its steps are already in the day's step count, so its calories aren't added. Say so if they ask.
    - **A wrong tie:** `action: "put_back"`, then correct the session's figures with `correct_capture` if they should change.
    - Never copy a watch workout's figures onto a session yourself with `log_session` or `correct_capture`: the tie is what records which session it was.
+
+## A lab report
+
+When they hand over lab results (a PDF, a photo or screenshot, or pasted text), save the whole report with **`log_lab_results`**: every result, in the report's order, the in-range ones too.
+
+- **As printed.** Send each value, unit and range exactly as the report prints them, and never convert a unit. State the status the report gives (in range, above, below, out of range). Use "no range given" only when the report prints neither a range nor a mark. Never invent a range or a status.
+- **The sample day** is the day the report says the sample was taken. If it doesn't say, ask.
+- **Names.** If the summary says they already have lab reports, read `get_labs` with `view: "names"` first, and reuse an existing test name and section when the new report means the same test.
+- **A value you can't read for certain:** ask; never guess a number. If the tool refuses a result, read the reason, look at the report again and fix that result. Never change a status just to make it save.
+- **A report too long for one call** continues with `addToReportId`.
+- **Say back** the sample day, how many results were saved, and each out-of-range result with its value, unit and range. Ask them to say if anything is wrong.
+- **A measure their goals already track** (such as an LDL under a goal): also log that reading as you do today (`log_body`).
+- **A wrong result:** read it with `get_labs`, then `correct_capture`. **A wrong result, or a whole wrong report, to remove:** `delete_capture`.
 
 ## A correction, or an entry to remove
 
